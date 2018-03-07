@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
+$body-font: Comfortaa, cursive;
+$dark: #111;
+$light: #f2f9ff;
+$pink: #f1457f;
+$green: #9fce40;
+$blue: #3a5caa;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+body {
+    font-family: $body-font;
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: $dark;
+    color: $light;
+    margin: 0;
+}
+
+h1 {
+    margin: 30px 0 9px 0;
+}
+
+#header {
+    height: 100px;
+    padding: .2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4em;
+
+    #header-left {
+        font-size: 1.6em;
+        padding-left: 35px;
+    }
+
+    #header-right {
+        margin-right: 35px;
+
+        a {
+            margin: 3px 3px 3px;
+            text-decoration: none;
+        }
+
+        #link-projects {
+            color: $pink;
+        }
+
+        #link-skills {
+            color: $green;
+        }
+
+        #link-contact {
+            color: $blue;
+        }
+    }
+}
+
+.section {
+    .section-header::after {
+        margin-left: 12px;
+        content: "";
+        float: left;
+        width: 70px;
+        height: 3px;
+        border-radius: 3px;
+    }
+
+    #projects::after {
+        background-color: $pink;
+    }
+    #skills::after {
+        background-color: $green;
+    }
+    #contact::after {
+        background-color: $blue;
+    }
+
+    margin: 0 35px 50px 35px;
+}
