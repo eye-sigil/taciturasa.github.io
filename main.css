@@ -12,6 +12,28 @@ h1 {
   margin: 30px 0 9px 0;
 }
 
+h2 {
+  margin: 0 0 9px 0;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #f2f9ff;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  border-radius: 8px;
+  width: auto;
+  padding: 6px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.button a {
+  color: #f2f9ff;
+}
+
 #header {
   height: 100px;
   padding: .2%;
@@ -24,6 +46,7 @@ h1 {
 #header #header-left {
   font-size: 1.6em;
   padding-left: 35px;
+  margin-right: 20px;
 }
 
 #header #header-right {
@@ -48,7 +71,9 @@ h1 {
 }
 
 .section {
-  margin: 0 35px 50px 35px;
+  margin: 0 35px 20px 35px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section .section-header::after {
@@ -70,4 +95,38 @@ h1 {
 
 .section #contact::after {
   background-color: #3a5caa;
+}
+
+.content {
+  margin-top: 30px;
+}
+
+.cards {
+  display: flex;
+  padding: 0 10px 0 10px;
+}
+
+.cards .card {
+  width: 220px;
+  height: 300px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.cards .card .button-row {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+#quiri {
+  background-color: #a95292;
+}
+
+#quiri-img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
 }
